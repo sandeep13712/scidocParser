@@ -1,0 +1,16 @@
+1fl1VovpvPW7vfkLruLp3iP7EaFXYYJWX,Designed to work on a slope as a dynamic walker this robot (~45 cm tall) exploits dynamics and morphology (in particular the shape and length of the body and feet) to achieve stable walking,introduction
+1fl1VovpvPW7vfkLruLp3iP7EaFXYYJWX,The robot’s natural dynamics serves as the target dynamics for a reinforcement learning mechanism enabling the robot to quickly learn to walk on flat ground,knownfact
+1fl1VovpvPW7vfkLruLp3iP7EaFXYYJWX,(E) Self-stabilizing vertical takeoff through materials and morphology (13),toDelete
+1fl1VovpvPW7vfkLruLp3iP7EaFXYYJWX,Inspired by flies this ultralight (60 mg 3-cm wingspan) ornithopter (a device that flies by flapping its wings) generates sufficient lift to take off vertically (power is supplied externally),observation
+1fl1VovpvPW7vfkLruLp3iP7EaFXYYJWX,A large part of the control is delegated to the morphological and material 201properties of the robot,perturbation
+1fl1VovpvPW7vfkLruLp3iP7EaFXYYJWX,Compliant structures are driven into resonance to 8 produce a large wing stroke and flexible material is used in the wing hinges to allow for passive rotations of the wings,perturbation
+1fl1VovpvPW7vfkLruLp3iP7EaFXYYJWX,(F) Agile wall-climbing through materials (20),toDelete
+1fl1VovpvPW7vfkLruLp3iP7EaFXYYJWX,The bio-inspiration for this palm-sized robot is provided by the gecko and its uncanny climbing talents,introduction
+1fl1VovpvPW7vfkLruLp3iP7EaFXYYJWX,The robot’s tri-foot (three-footed wheel) is equipped with a polymer dry adhesive material which to some extent has contact properties comparable to those of its biological analog,scientificAction
+1fl1VovpvPW7vfkLruLp3iP7EaFXYYJWX,The robot can flexibly navigate on smooth vertical and even inverted surfaces,observation
+1fl1VovpvPW7vfkLruLp3iP7EaFXYYJWX,(G) Morphing through localized self-reconfiguration (7),toDelete
+1fl1VovpvPW7vfkLruLp3iP7EaFXYYJWX,This self-reconfigurable robot is composed of active (actuated black) and passive (nonactuated white) cubic modules (~400 g ~60 to 65 mm side length),observation
+1fl1VovpvPW7vfkLruLp3iP7EaFXYYJWX,The modules connect to each other through hooks which enables the robot to change its morphology in a large number of ways,observation
+1fl1VovpvPW7vfkLruLp3iP7EaFXYYJWX,The picture shows the metamorphosis from a four legged (quadruped) structure to a linear (snakelike) structure,observation
+1fl1VovpvPW7vfkLruLp3iP7EaFXYYJWX,(H) Global movement through local interaction dynamics (9),toDelete
+1fl1VovpvPW7vfkLruLp3iP7EaFXYYJWX,The individual wheel-like modules (~10 cm in diameter) constituting this robot are equipped with spokelike parts driven by linear actuators,observation

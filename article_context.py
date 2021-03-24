@@ -66,7 +66,6 @@ exit(0)
 
 #load the data
 fullDataSets = pd.read_csv('dataForDocumentParsing.csv',sep=',')
-
 # break data into train, validation and test subsets
 trainingRatio = 0.6 
 validateRatio = 0.2

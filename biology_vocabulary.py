@@ -34,7 +34,8 @@ valid_work_type = "\n".join([
 '1. computational',
 '2. experimental',
 '3. hybrid/integrative',
-'4. data-driven',
+'4. data-driven (population study, clinical)',
+'5. field_study (e.g., in ecological systems)',
 '   ',    
 ])
 
@@ -42,15 +43,14 @@ valid_article_type = "\n".join([
 ' ',
 '1. research_article',
 '2. review_article',
-'3. short_story',
-'4. Opinion',
-'5. news_and_views',
+'3. short_article',
+'4. perspective, opinion, and commentary',
+'5. book_chapter',
+'6. news_and_views',
+'7. clinical_case_study',
+'8. clinical_trial', 
 '   ',    
 ])
-
-def createFeatureVector(corpusList):
-
-    return fatureVector
 
 def pdfparser(data):
     fp = open(data, 'rb')
@@ -59,27 +59,23 @@ def pdfparser(data):
     codec = 'utf-8'
     laparams = LAParams()
     device = TextConverter(rsrcmgr, retstr, laparams=laparams)
-    # Create a PDF interpreter object.
     interpreter = PDFPageInterpreter(rsrcmgr, device)
-    # Process each page contained in the document.
     for page in PDFPage.get_pages(fp):
         interpreter.process_page(page)
         data =  retstr.getvalue()
     data = re.sub(r'\d+|\W+|\b\w\b',' ',data)
     data = re.sub(r'\W+',' ',data)
-    # data = re.sub(r'\b\w\b', '', data) #remove single character word
     data = re.sub(r'\s+',' ',data)
-    # createFeatureVector(data)
     return data
 
 def createVocabulary():
-    filesToParse = glob.glob('pdfs/*.pdf')
+    filesToParse = glob.glob('../pdfs/*.pdf')
     print(filesToParse)
     documentCorpus = list()
 
     metaData = ""
 
-    for fileName in filesToParse[0:1]:
+    for fileName in filesToParse[0:3]:
         try:
             print(fileName)
             data = pdfparser(fileName) 
@@ -89,9 +85,7 @@ def createVocabulary():
             researchArea = input('select research area (comma separated) : '+valid_research_areas+"\n(E.g., 1,3,4): ")
             work_type = input('select work type : '+valid_work_type+"\n(E.g., 1): ")
             article_type = input('select article type : '+valid_article_type+"\n(E.g., 1): ")
-
-            metaData +=  '{0},{1},{2}\n'.format(researchArea,work_type,article_type)
-
+            metaData +=  '{0},{1},{2},{3}\n'.format(len(data.split()),researchArea.replace(',',' '),work_type.replace(',',' '),article_type.replace(',',' '))
             print(metaData)
             
         except:

@@ -4,10 +4,10 @@ This repository contains tools to parse information from research paper. Followi
 
 
 Tools:
-A. biology_vocabulary
-Any machine model aimed at parsing biological research article essentially need keywords which are relevant and defines biological entities and phenomena. The purpose of this tool is to generate biological vocabulary from previously published paper. This vocabulary can then be used to develop NLP-based text analysis tools specifically for biology related papers.
+- A. biology_vocabulary
+A machine model aimed at parsing biological research article essentially need keywords which are relevant and defines biological entities and phenomena. The purpose of this tool is to generate biological vocabulary from previously published paper. This vocabulary can then be used to develop NLP-based text analysis tools specifically for biology related papers.
 
-B. article_context 
+- B. article_context 
 This package allows predicting research_area and work_type from research article. 
 
 research_area could be one of the following:
